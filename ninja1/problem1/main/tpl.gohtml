@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!-- Using .range to get and print the values of struct -->
+{{range .}}
+    {{.AcaYear}}
+        {{.Fall.Term}}
+            {{range .Fall.Courses}}
+                {{.Number}} -- {{.Name}} -- {{.Units}} <br>
+            {{end}} <br>
+    {{.AcaYear}}
+        {{.Spring.Term}}
+            {{range .Spring.Courses}}
+                {{.Number}} -- {{.Name}} -- {{.Units}} <br>
+            {{end}} <br>
+{{end}}
+
+</body>
+</html>
