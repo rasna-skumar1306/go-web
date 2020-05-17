@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing Slice with index and value</title>
+</head>
+<body>
+    <ul>
+        {{range $index,$value := .}} <!-- Using range to collect the values of []string into $index and $value -->
+        <li>{{$index}}-{{$value}}</li> <!-- Printing the values of index and value -->
+        {{end}}
+    </ul>
+    
+</body>
+</html>
