@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{.Name}} HOTEL MENU
+
+    Breakfast:  {{range $id, $val := .Breakfast.Item}}
+                item {{$id}}: {{$val}}
+                {{end}}
+    Lunch    :  {{range $id, $val := .Lunch.Item}}
+                item {{$id}}: {{$val}}
+                {{end}}
+    Dinner   :  {{range $id, $val := .Dinner.Item}}
+                item {{$id}}: {{$val}}
+                {{end}}
+
+
+</body>
+</html>
