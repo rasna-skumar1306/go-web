@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing map index and value</title>
+</head>
+<body>
+    <h1>Passing Map key and value</h1>
+    <ul>
+        {{range $index,$value := .}} <!-- Using range for collecting $index and $value from map -->
+        <li>{{$index}}-{{$value}}</li>
+        {{end}}
+    </ul>
+    
+</body>
+</html>
